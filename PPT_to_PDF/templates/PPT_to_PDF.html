@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block page_content %}
+  <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label class="file">
+      <input id="file_picker" type="file" name="document" class="file_upload_input" accept=".pptx, .ppt" content="asd" onchange="update_file_selection()">
+      <span id="file-custom" class="file-custom"></span>
+    </label>
+    <br>
+    <button type="button" class="btn btn-primary" ONCLICK="validate_power_point(form)">CONVERT</button>
+  </form>
+{% endblock %}

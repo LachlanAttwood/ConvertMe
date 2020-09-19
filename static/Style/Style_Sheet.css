@@ -1,0 +1,142 @@
+/* Overall Styling */
+.Emphisis {
+    color: #FF0066 !important;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+/* Top Navigation */
+#top_nav {
+    display: flex;
+    padding-left: 3rem;
+    padding-top: 3rem;
+    padding-right: 3rem;
+    align-items: center;
+}
+#top_nav img{
+    width: 72px;
+    height: 72px;
+}
+#top_nav h3{
+    padding-left: 1rem;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Row 1 */
+#Row1 {
+    padding-top: 3rem;
+    margin-top: 5%;
+}
+#Row1 h1{
+    text-align: center;
+    font-size: 3.5em;
+}
+
+/* Row 2 - Main Container */
+#Row2_Container {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+#Row2_Container button {
+    border-radius: 100px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.5rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #ff0066;
+    border-width: 0px;
+    margin-top: 15px;
+}
+#Row2_Container button:hover {
+    background: #ff3386;
+}
+/*
+The following block of CSS code is sourced from wtfforms.com/wtf-forms.css
+ */
+.file {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 2.5rem;
+}
+.file input {
+    min-width: 25rem;
+    width: fit-content;
+    margin: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.file-custom {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    height: 2.5rem;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    border: .075rem solid #ddd;
+    border-radius: .25rem;
+    box-shadow: inset 0 .2rem .4rem rgba(0,0,0,.05);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.file-custom:after {
+    justify-content: left;
+    content: "Choose file...";
+}
+.file-custom:before {
+    position: absolute;
+    top: -.075rem;
+    right: -.075rem;
+    bottom: -.075rem;
+    z-index: 6;
+    display: block;
+    content: "Browse";
+    height: 2.5rem;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    color: #555;
+    background-color: #eee;
+    border: .075rem solid #ddd;
+    border-radius: 0 .25rem .25rem 0;
+}
+/* Focus */
+.file input:focus ~ .file-custom {
+    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+}
+
+
+/* Row 3 - Footer Curves */
+#Row3_Bottom svg{
+    position: absolute;
+    bottom: 0px;
+}
+
+/* Remove footer waves for mobile */
+@media only screen and (max-width: 600px) {
+    #Row3_Bottom{
+        display: none;
+    }
+
+    .file input {
+        min-width: 50%;
+    }
+
+}
